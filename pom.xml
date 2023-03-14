@@ -63,16 +63,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
-<!--                <configuration>-->
-<!--                    <systemPropertyVariables>-->
-<!--                        <CONFIG_TEST_SYSTEM_PROPERTY>ValueFromSystemProperties</CONFIG_TEST_SYSTEM_PROPERTY>-->
-<!--                        <CONFIG_TEST_SYSTEM_PROPERTY_AND_ENV_VARIABLE>ValueFromSystemProperties</CONFIG_TEST_SYSTEM_PROPERTY_AND_ENV_VARIABLE>-->
-<!--                    </systemPropertyVariables>-->
-<!--                    <environmentVariables>-->
-<!--                        <CONFIG_TEST_ENV_VARIABLE>ValueFromEnvVariables</CONFIG_TEST_ENV_VARIABLE>-->
-<!--                        <CONFIG_TEST_SYSTEM_PROPERTY_AND_ENV_VARIABLE>ValueFromEnvVariables</CONFIG_TEST_SYSTEM_PROPERTY_AND_ENV_VARIABLE>-->
-<!--                    </environmentVariables>-->
-<!--                </configuration>-->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -81,7 +71,6 @@
                 <executions>
                     <execution>
                         <goals>
-                            <!-- FIXME why is test jar required? Classes exposed for other projects should be in main, just as e.g. junit -->
                             <goal>test-jar</goal>
                         </goals>
                     </execution>
